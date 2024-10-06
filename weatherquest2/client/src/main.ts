@@ -246,7 +246,10 @@ const createHistoryButton = (city: string) => {
 const createDeleteButton = (id: string) => {
   const btn = document.createElement('button');
   btn.classList.add('fas', 'fa-trash-alt', 'delete-city', 'btn', 'btn-danger', 'col-2');
-  btn.addEventListener('click', () => {
+  
+  // Stop the event from propagating to the form submit handler
+  btn.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents triggering the form's submit event
     deleteCityFromHistory(id);
   });
 

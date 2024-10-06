@@ -1,7 +1,7 @@
 {
-  "name": "weather-dashboard",
+  "name": "weather-quest",
   "version": "1.0.0",
-  "description": "",
+  "description": " A weather dashboard application that calls the OpenWeather API and renders data in the browser.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,7 @@
     "render-build": "npm install && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Massiel Escalante",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2",
