@@ -1874,12 +1874,12 @@ label form [type='radio'] {
   padding: 0.5rem;
   /* margin-left: 0.5rem; */
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
   color: #1a1a1a;
-  background-color: #aeaeae;
+  background-color: #cd7feb;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -1887,8 +1887,8 @@ label form [type='radio'] {
   /* text-align: inherit; */
   margin: 0.5rem;
   width: 100%;
-  background-color: #5098e6;
-  color: #d9e9e8;
+  background-color: rgb(22, 178, 205);
+  color: white;
 }
 
 .weather-search {
@@ -1911,8 +1911,8 @@ label form [type='radio'] {
 }
 
 .weather-header {
-  background: #20084a;
-  background: -webkit-linear-gradient(right, #20084a, #3463bc);
-  background: -moz-linear-gradient(right, #20084a, #3463bc);
-  background: linear-gradient(to left, #20084a, #3463bc);
+  background: #1d3ed2;
+  background: -webkit-linear-gradient(right, #1d3ed2, #1d3ed2);
+  background: -moz-linear-gradient(right, #1d3ed2, #1d3ed2);
+  background: linear-gradient(to left, #1d3ed2, #1d3ed2);
 }
