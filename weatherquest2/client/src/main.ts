@@ -193,6 +193,15 @@ const handleSearchFormSubmit = (event: Event) => {
   searchInput.value = '';
 };
 
+const handleSearchHistoryClick = (event: Event) => {
+  if ((event.target as HTMLElement).matches('.history-btn')) {
+    const city = (event.target as HTMLElement).textContent;
+    if (city) {
+      fetchWeather(city);
+    }
+  }
+};
+
 /*
 
 Initial Render
@@ -257,6 +266,6 @@ const createDeleteButton = (id: string) => {
 };
 
 searchForm.addEventListener('submit', handleSearchFormSubmit);
-searchHistoryContainer.addEventListener('click', handleSearchFormSubmit);
+searchHistoryContainer.addEventListener('click', handleSearchHistoryClick);
 
 getAndRenderHistory();
