@@ -7,15 +7,29 @@ import HistoryService from '../../service/historyService.js';
 router.post('/', async (req, res) => {
   const { cityName } = req.body;
 
-  if (!cityName) {
-    return res.status(400).json({ error: 'City name is required' });
+  // Check if cityName is missing or blank
+  if (!cityName || cityName.trim() === '') {
+    return res.status(400).json({ error: 'City name cannot be blank' });
   }
 
   try {
+    // Fetch the weather data for the requested city
     const weatherData = await WeatherService.getWeatherForCity(cityName);
+    
+    // Log the fetched weather data
+    console.log(`Weather data for ${cityName}:`, weatherData); 
+    
+    // Add the city to the search history
     await HistoryService.addCity(cityName);
+
+    // Return the fetched weather data as JSON
     return res.json(weatherData);
+
   } catch (error) {
+    // Log the error details to the server console
+    console.error(`Error fetching weather data for ${cityName}:`, error);
+    
+    // Return a 500 status with a relevant error message
     return res.status(500).json({ error: 'Failed to retrieve weather data' });
   }
 });
