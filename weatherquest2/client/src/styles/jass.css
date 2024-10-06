@@ -1860,7 +1860,7 @@ label form [type='radio'] {
   /* width: 20%; */
   padding-right: 15px;
   padding-left: 15px;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 .weather-img {
@@ -1878,8 +1878,8 @@ label form [type='radio'] {
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
-  color: #1a1a1a;
-  background-color: #cd7feb;
+  color: #0f0e0e;
+  background-color: #9d67b2;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -1914,5 +1914,5 @@ label form [type='radio'] {
   background: #1d3ed2;
   background: -webkit-linear-gradient(right, #1d3ed2, #1d3ed2);
   background: -moz-linear-gradient(right, #1d3ed2, #1d3ed2);
-  background: linear-gradient(to left, #1d3ed2, #1d3ed2);
+  background: linear-gradient(to left, #1d3ed2, #a3d13a);
 }
