@@ -48,7 +48,7 @@ Oh, we're not done yet! Here are some exciting features that might be coming to 
 
 ## 🌍 Deployed Application
 
-Curious to see **Weather Quest** in action? Check out the live app [here](#). Get ready to start your weather adventure!
+Curious to see **Weather Quest** in action? Check out the live app [here](https://weatherquest2.onrender.com/). Get ready to start your weather adventure!
 
 ---
 
