@@ -2,6 +2,8 @@
 
 **Welcome to Weather Quest!** It’s as if you’ve got a tiny weather genie at your command! Simply enter the name of a city, and *poof*, the app conjures up everything you need—temperature, wind speeds, and more. It even keeps track of all the cities you've asked about, so you can quickly "Fetch" the forecast for your favorite locations. 
 
+![WeatherQuest Screenshot](./image/Screenshot%20weatherquest.png)
+
 ## 🌞 Motivation
 
 I built **Weather Quest** because I wanted to create something more than just a regular weather app. I wanted it to be **interactive, fun, and friendly for all ages**, Fetching the weather should feel as exciting as a treasure hunt for sunshine or rainbows! 🌈  
